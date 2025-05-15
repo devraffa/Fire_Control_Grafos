@@ -1,45 +1,44 @@
 #construção de um grafo
-
-grafo = {
-    0: {
-        "info": [2, False, False, 0],  # [agua_necessaria, posto, lago, estado_fogo]
-        "vizinhos": [(1, 3), (2, 5)]   # (vizinho, custo)
-    },
-    1: {
-        "info": [1, True, False, 0],
-        "vizinhos": [(0, 3), (3, 2)]
-    },
-    2: {
-        "info": [3, False, True, 0],
-        "vizinhos": [(0, 5), (3, 4)]
-    },
-    3: {
+grafo = { # vasco da gama 
+    "A": {
         "info": [2, False, False, 0],
-        "vizinhos": [(1, 2), (2, 4), (4, 6)]
+        "vizinhos": [("B", 3), ("C", 5)]
     },
-    4: {
-        "info": [2, False, False, 0],
-        "vizinhos": [(3, 6), (5, 1)]
+    "B": {
+        "info": [1, False, False, 0],
+        "vizinhos": [("A", 3), ("D", 2)]
     },
-    5: {
+    "C": {
         "info": [3, False, False, 0],
-        "vizinhos": [(4, 1), (6, 3)]
+        "vizinhos": [("A", 5), ("D", 4)]
     },
-    6: {
-        "info": [1, False, True, 0],
-        "vizinhos": [(5, 3), (7, 2)]
-    },
-    7: {
+    "D": {
         "info": [2, False, False, 0],
-        "vizinhos": [(6, 2), (8, 4)]
+        "vizinhos": [("B", 2), ("C", 4), ("E", 6)]
     },
-    8: {
-        "info": [1, True, False, 0],
-        "vizinhos": [(7, 4), (9, 5)]
-    },
-    9: {
+    "E": {
         "info": [2, False, False, 0],
-        "vizinhos": [(8, 5)]
+        "vizinhos": [("D", 6), ("F", 1)]
+    },
+    "F": {
+        "info": [3, False, False, 0],
+        "vizinhos": [("E", 1), ("G", 3)]
+    },
+    "G": {
+        "info": [1, False, False, 0],
+        "vizinhos": [("F", 3), ("H", 2)]
+    },
+    "H": {
+        "info": [2, False, False, 0],
+        "vizinhos": [("G", 2), ("I", 4)]
+    },
+    "I": {
+        "info": [1, False, False, 0],
+        "vizinhos": [("H", 4), ("J", 5)]
+    },
+    "J": {
+        "info": [2, False, False, 0],
+        "vizinhos": [("I", 5)]
     }
 }
 
