@@ -33,7 +33,7 @@ def reconstroi(pai, origem):
             continue
 
         if pai[destino] is None:
-            caminhos[destino] = None  # sem caminho
+            caminhos[destino] = None 
             continue
 
         caminho = []
@@ -46,11 +46,10 @@ def reconstroi(pai, origem):
     return caminhos
 
 
-# Executando o algoritmo
+# testando 
 resultado, predecessores = dijkstra(grafo, 'A')
 caminhos = reconstroi(predecessores, 'A')
 
-# Imprimindo o resultado
 print("Distâncias a partir do vértice 'A':")
 for vertice, distancia in resultado.items():
     print(f"{vertice}: {distancia}")
