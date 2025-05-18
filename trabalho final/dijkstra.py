@@ -47,7 +47,7 @@ def reconstroi(pai, origem):
 
     return caminhos
 
-
+print("=== Testando o Dijkstra ===")
 # testando 
 resultado, predecessores = dijkstra(grafo, 'A')
 caminhos = reconstroi(predecessores, 'A')

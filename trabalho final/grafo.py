@@ -1,5 +1,5 @@
 #construção de um grafo
-grafo = { 
+grafo = { #vasco da gama 
     "A": {
         "info": [10, False, False, 0],
         "vizinhos": [("B", 3), ("C", 5)]
