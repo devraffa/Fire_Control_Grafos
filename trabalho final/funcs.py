@@ -1,7 +1,9 @@
 import random 
-from grafo import grafo
+from lerTXT import ler_grafo_txt
 from collections import deque
 from dijkstra import dijkstra, reconstroi
+
+grafo = ler_grafo_txt("entrada.txt")
 
 def criarfogo(grafo, lago, posto):
     while True:
@@ -234,7 +236,7 @@ while em_chamas(grafo):
     for vertice in grafo:
         if grafo[vertice]["info"][3] == 1:
             tempo_fogo[vertice] = tempo_fogo.get(vertice, 0) + 1
-            if tempo_fogo[vertice] >= 4:
+            if tempo_fogo[vertice] >= 15:
                 grafo[vertice]["info"][3] = 2  # queimado
                 print(f"💀 O vértice {vertice} queimou completamente após 4 turnos!")
 

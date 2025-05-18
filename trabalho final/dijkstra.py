@@ -1,5 +1,7 @@
 import heapq
-from grafo import grafo
+from lerTXT import ler_grafo_txt
+
+grafo = ler_grafo_txt("entrada.txt")
 
 def dijkstra(grafo, origem):
     distancias = {vertice: float('inf') for vertice in grafo}

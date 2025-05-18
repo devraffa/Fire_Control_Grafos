@@ -1,46 +1,67 @@
 #construção de um grafo
 grafo = { 
     "A": {
-        "info": [4, False, False, 0],
+        "info": [10, False, False, 0],
         "vizinhos": [("B", 3), ("C", 5)]
     },
     "B": {
-        "info": [5, False, False, 0],
+        "info": [8, False, False, 0],
         "vizinhos": [("A", 3), ("D", 2)]
     },
     "C": {
-        "info": [5, False, False, 0],
+        "info": [9, False, False, 0],
         "vizinhos": [("A", 5), ("D", 4)]
     },
     "D": {
-        "info": [4, False, False, 0],
+        "info": [11, False, False, 0],
         "vizinhos": [("B", 2), ("C", 4), ("E", 6)]
     },
     "E": {
-        "info": [6, False, False, 0],
+        "info": [12, False, False, 0],
         "vizinhos": [("D", 6), ("F", 1)]
     },
     "F": {
-        "info": [5, False, False, 0],
+        "info": [14, False, False, 0],
         "vizinhos": [("E", 1), ("G", 3)]
     },
     "G": {
-        "info": [6, False, False, 0],
+        "info": [16, False, False, 0],
         "vizinhos": [("F", 3), ("H", 2)]
     },
     "H": {
-        "info": [4, False, False, 0],
+        "info": [7, False, False, 0],
         "vizinhos": [("G", 2), ("I", 4)]
     },
     "I": {
-        "info": [5, False, False, 0],
+        "info": [9, False, False, 0],
         "vizinhos": [("H", 4), ("J", 5)]
     },
     "J": {
-        "info": [5, False, False, 0],
+        "info": [9, False, False, 0],
         "vizinhos": [("I", 5)]
+    },
+    "K": {
+        "info": [9, False, False, 0],
+        "vizinhos": [("J", 5)]
+    },
+    "L": {
+        "info": [9, False, False, 0],
+        "vizinhos": [("K", 5)]
+    },
+    "M": {
+        "info": [9, False, False, 0],
+        "vizinhos": [("L", 5)]
+    },
+    "N": {
+        "info": [9, False, False, 0],
+        "vizinhos": [("M", 5)]
+    },
+    "O": {
+        "info": [9, False, False, 0],
+        "vizinhos": [("N", 5)]
     }
 }
+
 
 
 # grafo = {
